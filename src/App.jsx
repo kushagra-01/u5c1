@@ -13,23 +13,29 @@ const [Inkpen,setInkpen]=useState(78)
   return (
     <>
 <h1>Inventory management</h1>
+
+
+{/* Books */}
+
+
+
 <div className='items'>
   <h2>Books</h2>
 
   <span>Books:{Books}</span>
   
-  <button className="addBook" onClick={()=>{
+  <button className='addBook' onClick={()=>{
     setBooks(Books+1)
   }}>
       +
     </button>
-    <button className="remBook" onClick={()=>{
+    <button className='remBook' onClick={()=>{
     setBooks(Books-1)
   }}>
       -
     </button>
 
-    <span className="totalBooks">{Books}</span>
+    <span className='totalBooks'>{Books}</span>
 
 </div>
 
@@ -42,18 +48,18 @@ const [Inkpen,setInkpen]=useState(78)
 
   <span>Pen:{Pen}</span>
   
-  <button className="addPen" onClick={()=>{
+  <button className='addPen' onClick={()=>{
     setPen(Pen+1)
   }}>
       +
     </button>
-    <button className="remPen" onClick={()=>{
+    <button className='remPen' onClick={()=>{
     setPen(Pen-1)
   }}>
       -
     </button>
 
-    <span className="totalPens">{Pen}</span>
+    <span className='totalPens'>{Pen}</span>
 
 </div>
 
@@ -67,18 +73,18 @@ const [Inkpen,setInkpen]=useState(78)
 
   <span>Notebook:{Notebook}</span>
   
-  <button className="addNotebook" onClick={()=>{
+  <button className='addNotebook' onClick={()=>{
     setNotebook(Notebook+1)
   }}>
       +
     </button>
-    <button className="remNotebook" onClick={()=>{
+    <button className='remNotebook' onClick={()=>{
     setNotebook(Notebook-1)
   }}>
       -
     </button>
 
-    <span className="totalNotebooks">{Notebook}</span>
+    <span className='totalNotebooks'>{Notebook}</span>
 
 </div>
 
@@ -92,22 +98,22 @@ const [Inkpen,setInkpen]=useState(78)
 
   <span>Inkpen:{Inkpen}</span>
   
-  <button className="addInkpen" onClick={()=>{
+  <button className='addInkpen' onClick={()=>{
     setInkpen(Inkpen+1)
   }}>
       +
     </button>
-    <button className="remInkpen" onClick={()=>{
+    <button className='remInkpen' onClick={()=>{
     setInkpen(Inkpen-1)
   }}>
       -
     </button>
 
-    <span className="totalInkpens">{Inkpen}</span>
+    <span className='totalInkpens'>{Inkpen}</span>
 
 </div>
 
-<div className="total">total:{Inkpen+Notebook+Pen+Books}</div>
+<div className='total'>total:{Inkpen+Notebook+Pen+Books}</div>
 
     </>
   );
